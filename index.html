@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | QR code component</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#D5E1EF]">
+      <main>
+        <div class="p-[16px] bg-white rounded-[20px] flex flex-col items-center justify-center max-w-[320px] mx-auto my-[152px] drop-shadow-md ">
+          <img src="images/image-qr-code.png" alt="qr" width="288">
+          <h1 class="text-[#1F314F] font-bold text-2xl mt-[24px] mb-[16px] text-center">Improve your front-end skills by building projects</h1>
+          <p  class="text-[#7D889E] font-semi-bold  text-center">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+      </main>    
+  </body>
+</html>
